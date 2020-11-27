@@ -2,7 +2,6 @@ const Libvoikko  = require( './lib/libvoikko.js' )();
 const voikko     = Libvoikko.init( 'fi' );
 const express    = require( 'express' );
 const bodyParser = require( 'body-parser' );
-const errorLog   = require( 'express-errorlog' );
 let   config     = null;
 
 try {
@@ -17,7 +16,6 @@ const app = express();
 
 // Allow the use of POST body requests
 app.use( bodyParser.json({ type: 'application/json' }) );
-app.use( errorLog );
 
 app.use( function( err, req, res, next ) {
     console.error( err );
