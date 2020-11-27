@@ -2,6 +2,8 @@
 
 Use Voikko over HTTP
 
+This fork is intended to be used with [RediPress](https://github.com/devgeniem/redipress) WordPress plugin.
+
 ## Installing
 
 1. Clone project
