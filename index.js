@@ -100,7 +100,6 @@ app.post( '/voikkoize/search', ( req, res ) => {
             switch ( word[0].CLASS ) {
 
                 // Ignore the word if it's irrelevant.
-                case 'asemosana':
                 case 'sidesana':
                 case 'seikkasana':
                     return '~' + orig;
@@ -118,7 +117,6 @@ app.post( '/voikkoize/search', ( req, res ) => {
                 switch ( token.CLASS ) {
 
                     // Ignore the word if it's irrelevant.
-                    case 'asemosana':
                     case 'sidesana':
                     case 'seikkasana':
                         return '';
